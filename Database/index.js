@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-const server = process.env.NODE_ENV === 'production'? `augani:0277427898@cluster0-x1ogt.mongodb.net`: 'localhost:27017'; // REPLACE WITH YOUR DB SERVER
+const server = process.env.LOCAL?'localhost:27017':'augani:0277427898@cluster0-x1ogt.mongodb.net'; // REPLACE WITH YOUR DB SERVER
 const database = 'huka';     // REPLACE WITH YOUR DB NAME
 
 
