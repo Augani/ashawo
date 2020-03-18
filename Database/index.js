@@ -12,7 +12,7 @@ class Database {
   }
   
 _connect() {
-     mongoose.connect(`mongodb://${server}/${database}`, { useNewUrlParser: true, useUnifiedTopology:  true })
+     mongoose.connect(`mongodb+srv://${server}/${database}`, { useNewUrlParser: true, useUnifiedTopology:  true })
        .then(() => {
          console.log('Database connection successful')
        })
