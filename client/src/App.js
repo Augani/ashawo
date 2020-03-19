@@ -61,6 +61,9 @@ function App(props) {
           props.state.USER_LOGGED_IN?<Pages.Home/>: <Redirect to="/"/>
         }
       </Route>
+      <Route path="/profile">
+         <Pages.Profile/>
+        </Route>
       <Route path="/forgot">
          <Pages.Forgot/>
         </Route>

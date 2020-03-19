@@ -13,7 +13,7 @@ body {
   z-index: 1;
 }
 
-.lazyMain{
+.lazyMain {
   height: 100%;
   width: 100%;
 }
@@ -23,34 +23,58 @@ body {
   transition: opacity 250ms ease-in;
 }
 
+
+.userMapInner{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.userHero {
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.userDetails {
+  height: 50%;
+
+}
+
+.userItems {
+  background: rgba(255, 255, 255, 1);
+}
+
+
+
 /* start */
 
-.leftLog{
+.leftLog {
   width: 50vw;
   height: 100%;
   padding: 20px;
   overflow: auto;
-  
+
 }
 
 
 
-.heading{
+.heading {
   height: 10%;
 }
 
-.logoSub{
+.logoSub {
   font-family: 'Roboto Mono', monospace;
   font-size: 13px;
   height: 20%;
   width: 100%;
 }
 
-span{
+span {
   font-family: 'Open Sans', monospace !important;
 }
 
-.rightLog{
+.rightLog {
   width: 50vw;
   height: 100%;
   background-position: center;
@@ -59,21 +83,41 @@ span{
   justify-content: center;
 }
 
-.RHold a{
+.RHold a {
   text-decoration: none;
   color: inherit;
 }
 
-.RSign{
+.RSign {
   color: rgb(65, 60, 60);
   padding-left: 10px;
 }
 
-.signSpin circle{
+
+
+.signSpin circle {
   stroke: rgb(115, 12, 211);
 }
 
-.rightland{
+.avatar {
+  border: 2px linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%) solid;
+  height: 45px !important;
+  width: 45px !important;
+}
+
+.sideBar {
+  background-color: rgb(115, 12, 211);
+  width: 6%;
+}
+
+.toolBoxOut {
+  color: grey !important;
+  height: 20px !important;
+  width: 20px !important;
+  cursor: pointer;
+}
+
+.rightland {
   width: 50vw;
   height: 100%;
   background-position: center;
@@ -81,7 +125,7 @@ span{
   justify-content: center;
 }
 
-.rightOverlay{
+.rightOverlay {
   height: 100%;
   width: 100%;
   z-index: 2;
@@ -89,86 +133,252 @@ span{
 
 }
 
-.logoArea{
+.logoArea {
   height: 10%;
   width: 100%;
   margin-bottom: 20px;
-  
+
 }
 
-.formHolder{
+.formHolder {
   margin-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.head{
+.alias {
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+}
+
+.matchingPer {
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.matches {
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.mainName {
+  font-size: 80px;
+  color: white;
+}
+
+.iconBack {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: ease-in .2s;
+  justify-content: center !important;
+  flex-direction: column;
+}
+
+.iconBack.active .circleIcon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.iconBack.active {
+  background-color: white;
+}
+
+.iconBack.active .icon {
+  color: rgb(115, 12, 211);
+  transform: scale(1.1);
+}
+
+.iconBack.active .circleIcon .borderIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px dashed rgb(115, 12, 211);
+  animation: rotate 4s linear infinite;
+
+}
+
+/* animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  50% {
+    transform: rotate(180deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes slow {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+.navBar {
+  height: 7%;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.head {
   font-size: 30px;
   color: rgb(65, 60, 60);
   font-family: 'Roboto Mono', monospace;
 }
-.headSub{
- 
+
+.headSub {
+
   font-size: 16px;
   color: rgb(65, 60, 60);
   font-family: 'Roboto Mono', monospace;
 }
 
-.third{
+.userName {
+  font-family: 'Roboto Mono', monospace;
+  color: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
+.third {
   font-family: 'Dancing Script', cursive !important;
 }
 
-.rightBack{
+.rightBack {
   height: 70%;
 }
-.logo{
+
+.logo {
   width: 100%;
   height: 80%;
 }
-.loginBtn{
+
+.loginBtn {
   background: linear-gradient(45deg, rgb(115, 12, 211) 30%, rgb(121, 21, 214) 90%);
-    border: 0;
-    border-radius: 3;
-    box-shadow: 0 3px 5px 2px rgba(49, 2, 94, .5);
-    color: 'white';
-    height: 50px !important;
-    padding: 0 30px;
+  border: 0;
+  border-radius: 3;
+  box-shadow: 0 3px 5px 2px rgba(49, 2, 94, .5);
+  color: 'white';
+  height: 50px !important;
+  padding: 0 30px;
 }
 
-.gotoBtn{
-    border: 1px rgba(49, 2, 94, .5) solid; 
-    border-radius: 3;
-    box-shadow: 0 3px 5px 2px rgba(49, 2, 94, .5);
-    color: 'white';
-    height: 50px !important;
-    padding: 0 30px;
+.gotoBtn {
+  border: 1px rgba(49, 2, 94, .5) solid;
+  border-radius: 3;
+  box-shadow: 0 3px 5px 2px rgba(49, 2, 94, .5);
+  color: 'white';
+  height: 50px !important;
+  padding: 0 30px;
 }
 
-.logoName{
+.imageMatchOwn {
+  height: 100px !important;
+  width: 100px !important;
+  border: 2px white solid;
+}
+
+.imageMatchOwn.visit {
+
+  /* border: 2px rgb(115, 12, 211) solid; */
+  left: -20px;
+}
+
+.logoName {
   font-size: 50px;
   font-weight: 900;
   color: rgb(115, 12, 211);
   font-family: 'Open Sans', sans-serif;
 }
 
-
-/* landing */
-.landingMain{
-  position: relative;
- 
+.logoIn {
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
 }
 
-.videoHolder{
+.icon {
+  color: white;
+  height: 20px !important;
+  width: 20px !important;
+  align-self: center;
+
+
+}
+
+.heroOverlay {
+  /* background-color: rgba(115, 12, 211, 0.6); */
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+
+
+/* landing */
+.landingMain {
+  position: relative;
+}
+
+.insideLogo {
+  height: 15%;
+}
+
+.videoHolder {
   display: flex;
   flex-direction: row;
 }
 
-.videoContent{
+.videoContent {
   /* height: 100% !important;
   width: 50% !important; */
 }
 
-.videoOverlay{
+.videoOverlay {
   background-color: rgba(115, 12, 211, 0.4);
   top: 0;
   bottom: 0;
@@ -179,7 +389,7 @@ span{
 
 }
 
-.landingPage{
+.landingPage {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -189,8 +399,16 @@ span{
 
 }
 
+.profileToolBox {
+  border-radius: 10px;
+  top: 20px;
+  right: 30px;
+  z-index: 50;
+  background-color: white;
+}
 
-.loginHolder{
+
+.loginHolder {
   height: 50%;
   width: 30%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -200,15 +418,16 @@ span{
 
 /* landing */
 
-.forgotLogo h4{
+.forgotLogo h4 {
   font-size: 60px;
   font-weight: bolder;
 }
 
-.forgotMain{
+.forgotMain {
   background-color: rgb(240, 240, 250);
 }
-.forgotHold{
+
+.forgotHold {
   width: 25%;
   height: 40%;
   background-color: white;
@@ -216,33 +435,52 @@ span{
   padding: 20px
 }
 
+.aboutMeHead {
+  color: rgb(32, 28, 28);
+  font-size: 18px;
+  
+}
+
+.aboutMe {
+  font-family: 'Roboto Mono';
+  color: rgb(48, 43, 43);
+}
+
+.profileImages{
+  width: 300px;
+  height: 300px;
+
+}
 
 
 
 
-@media (max-width:700px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  .leftLog{
+
+@media (max-width:700px) {
+
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .leftLog {
     width: 100vw;
     height: 100%;
     padding: 30px;
     overflow: auto;
-    
+
   }
 
-  .rightLog{
+  .rightLog {
     display: none;
     background: white;
   }
 
-  .rightOverlay{
+  .rightOverlay {
     display: none;
   }
 
-  .logo{
+  .logo {
     margin-bottom: 10px;
   }
 
-  button span a{
+  button span a {
     word-wrap: normal;
     flex-wrap: nowrap;
   }

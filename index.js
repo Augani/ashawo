@@ -6,6 +6,12 @@ const schema = require('./schema');
 const mongoose  = require('./Database');
 const path  = require('path')
 var app = express();
+
+// if (process.env.NODE_ENV !== 'production') {
+//   require('dotenv').load();
+// }
+
+
 app.use('/api', graphqlHTTP({
   schema: schema,
   rootValue: Root,
