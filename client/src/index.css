@@ -42,7 +42,7 @@ body {
 }
 
 .userItems {
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -436,14 +436,22 @@ h6 {
 }
 
 .aboutMeHead {
-  color: rgb(32, 28, 28);
+  color: rgb(18, 13, 43);
+  font-weight: bold;
+
   font-size: 18px;
   
 }
+.MuiTab-wrapper{
+  font-family: 'Montserrat' !important;
+  font-weight: bold !important;
+  color: rgb(15, 8, 32) !important;
+}
 
 .aboutMe {
-  font-family: 'Roboto Mono';
-  color: rgb(48, 43, 43);
+  font-family: 'Montserrat';
+  font-weight: bold !important;
+  color: rgb(15, 8, 32);
 }
 
 .profileImages{
